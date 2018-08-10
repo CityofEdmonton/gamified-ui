@@ -3,7 +3,7 @@ const users = [
         id: 1,
         name: 'Jared Rewerts',
         email: 'jared.rewerts@edmonton.ca',
-        avatarUrl: 'https://lh3.googleusercontent.com/-FEgEzyYNmvE/AAAAAAAAAAI/AAAAAAAAAAA/APUIFaPL8_wUBJK3XKMAYeRdeAc5ylQhtA/mo/photo.jpg?sz=46'
+        avatarUrl: 'https://lh3.googleusercontent.com/-FEgEzyYNmvE/AAAAAAAAAAI/AAAAAAAAAAA/APUIFaPL8_wUBJK3XKMAYeRdeAc5ylQhtA/mo/photo.jpg?sz=100'
     },
     {
         id: 2,

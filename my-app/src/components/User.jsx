@@ -11,11 +11,17 @@ const cardStyle = {
     alignItems: 'center'
 }
 
+const avatarStyle = {
+    borderRadius: '50%',
+    margin: '12px',
+    overflow: 'hidden'
+}
+
 class User extends React.Component {
     render() {
         return <div>
             <div style={cardStyle}>
-            <Avatar size="100" name={this.props.name} src={this.props.avatarUrl} />
+            <Avatar size="100" style={avatarStyle} name={this.props.name} src={this.props.avatarUrl} />
                 Hello, {this.props.name}
             </div>
         </div>;
