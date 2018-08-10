@@ -237,6 +237,32 @@ class AchievementService {
     }
 
     /**
+     * Gets goals for a specific achievement.
+     * @param {Number} id The achievement to get the goals of.
+     */
+    getGoals(id) {
+        return this.get(id).goals;
+    }
+
+    /**
+     * Gets a sepcific goal.
+     * @param {Number} id The id of the achievement the goal resides in.
+     * @param {*} goalId 
+     */
+    getGoal(id, goalId) {
+        return this.getGoals(id)[goalId];
+    }
+
+    /**
+     * Gets the progress of a given goal.
+     * @param {Number} id The id of the achievement.
+     * @param {*} goalId The id of the goal.
+     */
+    getGoalProgress(id, goalId) {
+        return this.getGoal(id, goalId).value;
+    }
+
+    /**
      * Grabs all achievments.
      */
     getAll() {
