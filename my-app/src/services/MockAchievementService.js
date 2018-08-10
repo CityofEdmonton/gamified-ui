@@ -216,3 +216,32 @@ const achievementsList = [
         "achievement_date": null
     }
 ]
+
+class AchievementService {
+    /**
+     * 
+     * @param {String} endpoint The url to hit for achievements.
+     */
+    constructor(endpoint) {
+        this.endpoint = endpoint;
+    }
+
+    /**
+     * Gets a specific achievements info.
+     * @param {Number} id The id of the achievement to get information on.
+     */
+    get(id) {
+        return achievementsList.find((element) => {
+            return element.id === id;
+        })
+    }
+
+    /**
+     * Grabs all achievments.
+     */
+    getAll() {
+        return achievementsList;
+    }
+}
+
+export default AchievementService;
